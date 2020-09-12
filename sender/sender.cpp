@@ -4,7 +4,11 @@
 #include<map>
 using namespace std;
 
-int main()
+int main(int num,char* str[])
 {
-  return 0;
+  string word;
+	fstream file;
+	file.open(str[1], ios::in);
+	getline(file, word);
+	cout << word << endl;
 }
