@@ -4,11 +4,11 @@
 #include<map>
 using namespace std;
 
-int main(int num,char* str[])
+int main()
 {
   	string word;
 	fstream file;
-	file.open(str[1], ios::in);
+	file.open("sample-review/test.csv", ios::in);
 	getline(file, word);
-	cout << word << endl<<num<<endl;
+	cout << word << endl;
 }
