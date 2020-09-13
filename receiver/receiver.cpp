@@ -6,9 +6,7 @@ using namespace std;
 int main()
 {
   string str;
-  while(getline(cin,str))
-  {
-      cout<<str<<endl;
-  }
+  getline(cin,str);
+  cout<<str<<" Receiver worked"<<endl;
   return 0;
 }
