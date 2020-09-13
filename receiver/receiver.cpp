@@ -1,9 +1,5 @@
-#include<iostream>
-#include<fstream>
-#include<vector>
-#include<sstream>
+
 #include "functions.h"
-using namespace std;
 using namespace functions;
 
 
