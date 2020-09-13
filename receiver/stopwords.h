@@ -1,8 +1,9 @@
 #include<unordered_set>
 #include<string>
+
 namespace stopwords
 {
-  unordered_set<string> stopwords={"a", "about", "above", "after",
+  std::unordered_set<string> stopwords={"a", "about", "above", "after",
 			"again", "against", "ain", "all", "am", "an",
 			"and", "any", "are", "aren", "aren't", "as", "at",
 			"be", "because", "been", "before", "being", "below",
