@@ -7,6 +7,6 @@ int main()
 {
   string str;
   getline(cin,str);
-  cout<<str<<endl;
+  cout<<str<<" Receiver worked"<<endl;
   return 0;
 }
