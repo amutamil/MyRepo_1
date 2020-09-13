@@ -20,9 +20,9 @@ int main()
      removeSpecialChar(s1);
      ToLowerChar(s1);
       cout<<s1<<endl;
-     //pushIntoMap(s1,m);
+     pushIntoMap(s1,m);
   }
-  //printmap(m);
+  printmap(m);
   return 0;
 }
 
