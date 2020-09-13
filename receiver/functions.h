@@ -37,4 +37,29 @@ namespace functions
     transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
   }
   
+  void pushIntoMap(string& s1, unordered_map<string, int>& m)
+    {
+        string word;
+        stringstream sentence(s1);
+        while (getline(sentence, word, ' '))
+        {
+            if (m.find(word) == m.end())
+                m.insert({ word, 1 });
+            else
+            {
+                unordered_map<string, int>::iterator it;
+                it = m.find(word);
+                it->second += 1;
+            }
+        }
+    }
+  
+  void printmap(unordered_map<string, int>& m)
+  {
+   unordered_map<string, int>::iterator itr;
+   for (auto itr = m.begin(); itr != m.end(); ++itr) {
+        cout << itr->first
+            << '\t' << itr->second << '\n';
+  }
+  
 }
