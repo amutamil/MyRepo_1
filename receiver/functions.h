@@ -4,6 +4,8 @@
 #include<map>
 #include<iterator>
 #include<algorithm>
+#include<fstream>
+#include<sstream>
 using namespace std;
 
 namespace functions
