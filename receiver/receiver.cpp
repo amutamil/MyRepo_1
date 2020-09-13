@@ -14,7 +14,10 @@ int main()
   }
   while(getline(cin,s1))
   {
-    cout<<s1<<endl;
+     removeNums(s1);
+     removeSpecialChar(s1);
+     ToLowerChar(s1);
+     cout<<s1<<endl;
   }
   return 0;
 }
