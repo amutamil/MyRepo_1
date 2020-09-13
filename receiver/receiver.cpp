@@ -20,7 +20,7 @@ int main()
      removeSpecialChar(s1);
      ToLowerChar(s1);
      pushIntoMap(s1,m);
-     printmap(m);
   }
+  printmap(m);
   return 0;
 }
