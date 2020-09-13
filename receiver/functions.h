@@ -57,9 +57,11 @@ namespace functions
   void printmap(unordered_map<string, int>& m)
   {
    unordered_map<string, int>::iterator itr;
-   for (auto itr = m.begin(); itr != m.end(); ++itr) {
+   for (auto itr = m.begin(); itr != m.end(); ++itr) 
+      {
         cout << itr->first
             << '\t' << itr->second << '\n';
+      }
   }
   
 }
