@@ -7,7 +7,9 @@
 #include<algorithm>
 #include<fstream>
 #include<sstream>
+#include "stopwords.h"
 using namespace std;
+using namespace stopwords;
 
 namespace functions
 {
