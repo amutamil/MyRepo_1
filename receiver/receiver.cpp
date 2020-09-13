@@ -8,7 +8,7 @@ void pushIntoCsv(string str);
 void pushIntoCsv(string s1)
 {
   fstream file;
-    file.open("output.csv", ios::in | ios::app);
+    file.open("output.csv", ios::out | ios::app);
     file << s1<<endl;
 }
 
