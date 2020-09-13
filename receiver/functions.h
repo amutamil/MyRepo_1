@@ -1,3 +1,11 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include<map>
+#include<iterator>
+#include<algorithm>
+using namespace std;
+
 namespace functions
 {
 
