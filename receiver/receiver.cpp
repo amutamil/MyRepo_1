@@ -3,23 +3,33 @@
 #include<vector>
 #include<sstream>
 using namespace std;
+bool checkExceptions(string s);
 
-void pushIntoCsv(string str);
-
-void pushIntoCsv(string s1)
+bool checkExceptions(string s)
 {
-  fstream file;
-    file.open("output.csv", ios::out | ios::app);
-    file << s1<<endl;
+  string arr[3]={"filename not passed as argument","file cannot be opened","file is empty"};
+  for(unsigned int i=0;i<3;i++)
+  {
+    if(s==arr[i])
+    {
+      return true;
+    }
+  }
+  return false;
 }
 
 int main()
 {
-  string str;
-  while(getline(cin,str))
+  string s1;
+  getline(cin,s1);
+  if(checkExceptions(s1))
   {
-    cout<<str<<endl;
-    pushIntoCsv(str);
+    cout<<s1;
+    return 0;
+  }
+  while(getline(cin,s1))
+  {
+    cout<<s1<<endl;
   }
   return 0;
 }
