@@ -19,9 +19,10 @@ int main()
      removeNums(s1);
      removeSpecialChar(s1);
      ToLowerChar(s1);
-     pushIntoMap(s1,m);
+      cout<<s1<<endl;
+     //pushIntoMap(s1,m);
   }
-  printmap(m);
+  //printmap(m);
   return 0;
 }
 
