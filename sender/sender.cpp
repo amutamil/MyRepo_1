@@ -4,7 +4,7 @@
 #include<map>
 using namespace std;
 
-int main(int argc,char* argv[])
+int main(char* argv[])
 {
   	string word;
 	fstream file;
