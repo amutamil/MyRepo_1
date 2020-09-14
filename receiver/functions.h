@@ -60,7 +60,7 @@ namespace functions
         stringstream sentence(s1);
         while(getline(sentence,word))
         {
-           if (stopwords::stopword.find(word) == stopwords::stopwords.end())
+           if (stopwords::stopword.find(word) == stopwords::stopword.end())
                 pushIntoMap(word, m);
         }
   }
