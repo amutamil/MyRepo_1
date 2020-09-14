@@ -3,7 +3,7 @@
 
 namespace stopwords
 {
-  std::unordered_set<std::string> stopwords={"a", "about", "above", "after",
+  std::unordered_set<std::string> stopword={" ","a", "about", "above", "after",
 			"again", "against", "ain", "all", "am", "an",
 			"and", "any", "are", "aren", "aren't", "as", "at",
 			"be", "because", "been", "before", "being", "below",
