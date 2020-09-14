@@ -39,13 +39,12 @@ namespace functions
     transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
   }
  
-string trim(string& s)
+void trim(string& s1)
 {
 	const string WHITESPACE = " \n\r\t\f\v";
-	size_t start = s.find_first_not_of(WHITESPACE);
-	if (start == string::npos)
-		return(s.substr(start));
-	return s;
+	size_t start = s1.find_first_not_of(WHITESPACE);
+	if (start != string::npos)
+		s1=s1.substr(start);
 }
  
   void pushIntoMap(string& s1, unordered_map<string, int>& m)
