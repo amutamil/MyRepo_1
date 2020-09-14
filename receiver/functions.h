@@ -38,7 +38,16 @@ namespace functions
   {
     transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
   }
-  
+ 
+string trim(string& s)
+{
+	const string WHITESPACE = " \n\r\t\f\v";
+	size_t start = s.find_first_not_of(WHITESPACE);
+	cout << start;
+	if (start == string::npos)
+		return(s.substr(start));
+}
+ 
   void pushIntoMap(string& s1, unordered_map<string, int>& m)
     {
         string word=s1;
