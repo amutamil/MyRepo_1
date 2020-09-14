@@ -58,7 +58,7 @@ namespace functions
   {
         string word;
         stringstream sentence(s1);
-        while(getline(sentence,word))
+        while(getline(sentence,word,' '))
         {
            if (stopwords::stopword.find(word) == stopwords::stopword.end())
                 pushIntoMap(word, m);
