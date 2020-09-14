@@ -41,7 +41,10 @@ namespace functions
   
   void pushIntoMap(string& s1, unordered_map<string, int>& m)
     {
-        
+        string word;
+        stringstream sentence(s1);
+        while (getline(sentence, word, ' '))
+        {
             if (m.find(s1) == m.end())
                 m.insert({ s1, 1 });
             else
@@ -50,19 +53,9 @@ namespace functions
                 it = m.find(s1);
                 it->second += 1;
             }
-        
+        }
     }
   
-  void removeStopWords(string &s1)
-  {
-        string word;
-        stringstream sentence(s1);
-        while(getline(sentence,word))
-        {
-           if (stopwords.find(word) == stopwords.end())
-                pushIntoMap(word, m);
-        }
-  }
   
   void printmap(unordered_map<string, int>& m)
   {
