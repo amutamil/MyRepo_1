@@ -12,7 +12,7 @@ using namespace std;
 using namespace stopwords;
 
 namespace functions
-{
+{ unordered_map<string, int> m;
   bool checkExceptions(string s)
   {
   string arr[3]={"filename not passed as argument","file cannot be opened","file is empty"};
