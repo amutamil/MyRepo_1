@@ -45,12 +45,12 @@ namespace functions
         stringstream sentence(s1);
         while (getline(sentence, word, ' '))
         {
-            if (m.find(s1) == m.end())
-                m.insert({ s1, 1 });
+            if (m.find(word) == m.end())
+                m.insert({ word, 1 });
             else
             {
                 unordered_map<string, int>::iterator it;
-                it = m.find(s1);
+                it = m.find(word);
                 it->second += 1;
             }
         }
