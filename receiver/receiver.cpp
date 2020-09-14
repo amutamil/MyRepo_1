@@ -4,7 +4,7 @@ using namespace functions;
 
 int main()
 {
-  string s1;    unordered_map<string, int> m;
+  string s1;    
 
   getline(cin,s1);
   
