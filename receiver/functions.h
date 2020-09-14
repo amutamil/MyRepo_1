@@ -43,7 +43,6 @@ string trim(string& s)
 {
 	const string WHITESPACE = " \n\r\t\f\v";
 	size_t start = s.find_first_not_of(WHITESPACE);
-	cout << start;
 	if (start == string::npos)
 		return(s.substr(start));
 	return s;
