@@ -56,6 +56,17 @@ namespace functions
         }
     }
   
+  void removeStopWords(string &s1)
+  {
+        string word;
+        stringstream sentence(s1);
+        while(getline(sentence,word))
+        {
+           if (stopwords.find(word) == stopwords.end())
+                pushIntoMap(word, m);
+        }
+  }
+  
   
   void printmap(unordered_map<string, int>& m)
   {
