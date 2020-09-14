@@ -4,7 +4,7 @@ using namespace functions;
 
 int main()
 {
-  string s1,s2;    
+  string s1;    
 
   getline(cin,s1);
   
@@ -19,9 +19,9 @@ int main()
      removeNums(s1);
      removeSpecialChar(s1);
      ToLowerChar(s1);
-     s2=trim(s1);
-     removeStopWords(s2,m);
-      cout<<s2<<endl;
+     trim(s1);
+     removeStopWords(s1,m);
+      cout<<s1<<endl;
      //pushIntoMap(s1,m);
   }
   printmap(m);
