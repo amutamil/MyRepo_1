@@ -10,7 +10,7 @@
 #include "stopwords.h"
 using namespace std;
 using namespace stopwords;
-
+/*****************/
 namespace functions
 {
   bool checkExceptions(string s)
