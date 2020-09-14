@@ -38,7 +38,15 @@ namespace functions
   {
     transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
   }
-  
+ 
+void trim(string& s1)
+{
+	const string WHITESPACE = " \n\r\t\f\v";
+	size_t start = s1.find_first_not_of(WHITESPACE);
+	if (start != string::npos)
+		s1=s1.substr(start);
+}
+ 
   void pushIntoMap(string& s1, unordered_map<string, int>& m)
     {
         string word=s1;
@@ -51,8 +59,10 @@ namespace functions
                 it = m.find(word);
                 it->second += 1;
             }
+      
         
     }
+
   
   void removeStopWords(string &s1,unordered_map<string, int>& m)
   {
@@ -60,7 +70,7 @@ namespace functions
         stringstream sentence(s1);
         while(getline(sentence,word,' '))
         {
-           if (stopwords::stopword.find(word) == stopwords::stopword.end())
+           if (stopwords::stopword.find(word) == stopwords::stopword.end() )
                 pushIntoMap(word, m);
         }
   }
