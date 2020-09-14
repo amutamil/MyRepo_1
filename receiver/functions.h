@@ -53,20 +53,10 @@ namespace functions
             }
         
     }
-void trim(string& s)
-{
-  string WHITESPACE = "  \n\r\t\f\v";
-	size_t start = s.find_first_not_of(WHITESPACE);
-	 if(start == string::npos) ? "" : s.substr(start);
-}
-
-
-
 
   
   void removeStopWords(string &s1,unordered_map<string, int>& m)
   {
-        trim(s1);
         string word;
         stringstream sentence(s1);
         while(getline(sentence,word,' '))
