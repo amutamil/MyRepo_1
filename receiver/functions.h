@@ -46,6 +46,7 @@ string trim(string& s)
 	cout << start;
 	if (start == string::npos)
 		return(s.substr(start));
+	return s;
 }
  
   void pushIntoMap(string& s1, unordered_map<string, int>& m)
@@ -71,7 +72,7 @@ string trim(string& s)
         stringstream sentence(s1);
         while(getline(sentence,word,' '))
         {
-           if (stopwords::stopword.find(word) == stopwords::stopword.end() && word!= " ")
+           if (stopwords::stopword.find(word) == stopwords::stopword.end() )
                 pushIntoMap(word, m);
         }
   }
