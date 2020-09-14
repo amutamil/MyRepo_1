@@ -42,12 +42,12 @@ namespace functions
   void pushIntoMap(string& s1, unordered_map<string, int>& m)
     {
         
-            if (m.find(word) == m.end())
-                m.insert({ word, 1 });
+            if (m.find(s1) == m.end())
+                m.insert({ s1, 1 });
             else
             {
                 unordered_map<string, int>::iterator it;
-                it = m.find(word);
+                it = m.find(s1);
                 it->second += 1;
             }
         
