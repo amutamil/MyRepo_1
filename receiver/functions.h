@@ -51,6 +51,7 @@ namespace functions
                 it = m.find(word);
                 it->second += 1;
             }
+      
         
     }
 
@@ -61,7 +62,7 @@ namespace functions
         stringstream sentence(s1);
         while(getline(sentence,word,' '))
         {
-           if (stopwords::stopword.find(word) == stopwords::stopword.end())
+           if (stopwords::stopword.find(word) == stopwords::stopword.end() && word!= " ")
                 pushIntoMap(word, m);
         }
   }
